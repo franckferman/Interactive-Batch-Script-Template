@@ -1,0 +1,97 @@
+# ==============================
+# 🪟 Windows Batch / CMD
+# ==============================
+
+# Temporary and backup batch files
+*.bak
+*.tmp
+*.old
+*.backup
+
+# Logs and outputs
+*.log
+*.out
+*.err
+
+# Windows-specific system files (if copied accidentally)
+Thumbs.db
+Desktop.ini
+
+# Generated lock or pid files
+*.pid
+*.lock
+
+# ==============================
+# 🛠️  Compilation & Binaries
+# ==============================
+
+# Binary files (compiled)
+bin/
+obj/
+*.o
+*.so
+*.a
+*.la
+*.lo
+*.dylib
+*.exe
+*.dll
+*.com
+
+# Results for `make`
+Makefile~
+*.d
+
+# ==============================
+# 📝  Text editors
+# ==============================
+
+# Vim
+*.swp
+*.swo
+*.swn
+*.viminfo
+
+# Nano
+.nanorc
+*.save
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# JetBrains (PyCharm, IntelliJ, WebStorm)
+.idea/
+*.iml
+
+# Emacs
+*~
+*.spacemacs
+
+# ==============================
+# 💾  Operating systems
+# ==============================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100/
+.Trashes/
+._*
+__MACOSX/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+*.lnk
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*.lock
+*~
