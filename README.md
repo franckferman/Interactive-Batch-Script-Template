@@ -13,9 +13,7 @@
 <!-- Title & Tagline -->
 <h3 align="center">⚙️ Interactive-Batch-Script-Template</h3>
 <p align="center">
-    <em>A ready-to-use template for building interactive batch scripts on Windows.</em>
-    <br>
-    A clean, modular foundation for dynamic CLI tools — system administration, automation, and maintenance.
+    <em>A starting point for interactive batch scripts on Windows.</em>
 </p>
 
 </div>
@@ -36,21 +34,19 @@
 
 ## 📖 About
 
-**Interactive-Batch-Script-Template** is a **lightweight, modular foundation** for building **interactive batch scripts** for **Windows system automation, administration, and maintenance**.
+A starter `.bat` for interactive command-line tools on Windows — admin tasks, automation, quick maintenance jobs. It comes with a menu loop, input prompts with validation, an admin-rights check, and a few working example commands, so you don't rewrite the same boilerplate every time.
 
-Instead of starting from a blank `.bat` every time, you get a clean skeleton — a menu loop, input handling, and working example commands — so you can drop in your own logic and ship in minutes.
-
-> ⚙️ **Note**: Originally built for personal and professional use, and shared publicly to save you time. It's **simple, efficient, and dependency-free** — a solid starting point without reinventing the wheel.
+> ⚙️ Built for my own use and shared as-is. Pure batch, no dependencies.
 
 <p align="right">(<a href="#top">🔼 Back to top</a>)</p>
 
 ## ✨ Features
 
-- 🧩 **Menu-driven loop** — a clean, colorized interactive menu, ready to extend.
-- ✅ **Input validation** — prompts re-ask until a value is entered; no silent empty inputs.
-- 🔐 **Admin-rights check** — refuses to run without elevation, so privileged commands don't half-fail.
-- 🧰 **Working examples** — ping, DNS flush, date/time, and network-drive mapping to copy from.
-- 🪶 **Pure batch** — no dependencies, no runtime, no install. One file.
+- Interactive, colorized menu loop
+- Input prompts that re-ask on empty input
+- Administrator-rights check at startup
+- Example commands: ping, DNS flush, date/time, network-drive mapping
+- Pure batch — single file, no dependencies
 
 <p align="right">(<a href="#top">🔼 Back to top</a>)</p>
 
@@ -58,15 +54,14 @@ Instead of starting from a blank `.bat` every time, you get a clean skeleton —
 
 ### Prerequisites
 
-- **Windows** (tested on **10 & 11**; older versions may work but aren't officially supported).
-- **Command Prompt** (`cmd.exe`).
+- Windows (tested on 10 and 11)
+- Command Prompt (`cmd.exe`)
 
-> ⚠️ Pure batch — **no external software or dependencies required.**
+No external software or dependencies — it's pure batch.
 
-### Getting the Template
+### Download
 
-Open `cmd.exe` and download the script in one command:
-
+From `cmd.exe`:
 ```bash
 curl.exe -sO https://raw.githubusercontent.com/franckferman/Interactive-Batch-Script-Template/refs/heads/main/InteractiveBatchScriptTemplate.bat
 ```
@@ -75,24 +70,22 @@ curl.exe -sO https://raw.githubusercontent.com/franckferman/Interactive-Batch-Sc
 
 ## 🎮 Usage
 
-### Quick Start
-
-1. Open **Command Prompt** in the folder where you downloaded the script.
-2. Run it (it will request administrator rights):
+1. Open `cmd.exe` in the folder where you downloaded the script.
+2. Run it (it asks for administrator rights):
 ```bash
 InteractiveBatchScriptTemplate.bat
 ```
-3. Follow the interactive menu and make your selection.
+3. Pick an option from the menu.
 
 ### Customization
 
-Edit the `.bat` to add your own menu entries and functions. Each option is a self-contained label (`:pingUtility`, `:flushDNS`, …) that returns to `:main` — copy one, rename it, wire it into the menu, and you're done. The built-in examples already demonstrate prompts, input validation, and colored output.
+Each menu action is a self-contained label (`:pingUtility`, `:flushDNS`, …) that jumps back to `:main`. Copy one, rename it, add it to the menu and the `:inputChoice` dispatcher.
 
 <p align="right">(<a href="#top">🔼 Back to top</a>)</p>
 
 ## 📜 License
 
-This project is licensed under the **GNU Affero General Public License v3.0**. See the [LICENSE](https://github.com/franckferman/Interactive-Batch-Script-Template/blob/main/LICENSE) file for details.
+GNU Affero General Public License v3.0. See the [LICENSE](https://github.com/franckferman/Interactive-Batch-Script-Template/blob/main/LICENSE) file.
 
 <p align="right">(<a href="#top">🔼 Back to top</a>)</p>
 
